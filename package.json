@@ -1,5 +1,5 @@
 {
-  "name": "reactable",
+  "name": "reactable-frontend",
   "version": "1.0.0",
   "description": "Quick & simple boilerplate for your React projects.",
   "main": "client/src/index.js",
@@ -11,9 +11,7 @@
     "test": "jest",
     "test:watch": "yarn run test --watch",
     "test:cover": "yarn run test --coverage",
-    "cypress:open": "cypress open",
-    "precommit": "yarn run lint && yarn test",
-    "prepush": "yarn run lint"
+    "cypress:open": "cypress open"
   },
   "keywords": [
     "react",
@@ -28,10 +26,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Xillioneur/reactable.git"
+    "url": "git+https://github.com/Xillioneur/reactable-frontend.git"
   },
   "bugs": {
-    "url": "https://github.com/Xillioneur/reactable/issues"
+    "url": "https://github.com/Xillioneur/reactable-frontend/issues"
   },
   "homepage": "https://github.com/Xillioneur/reactable#readme",
   "devDependencies": {
@@ -109,6 +107,12 @@
     ],
     "transform": {
       "^.+\\.js$": "babel-jest"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint && yarn test",
+      "pre-push": "yarn run lint"
     }
   }
 }
