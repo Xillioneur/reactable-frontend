@@ -1,44 +1,19 @@
-<a href="https://reactable.unii.design" target="_blank"><img src="https://github.com/Xillioneur/reactable/blob/master/src/images/logo.svg" height="200" alt="logo"></a>
+# Reactable Frontend
 
-# Reactable
-
-> Quick and simple react boilerplate
-
-> Setup basic web apps instantly
-
-> MERN, styled components, webpack
-
-TODO: Badges
-
-[![Reactable](https://dummyimage.com/600x300/ff3333/550055.png&text=Reactable)]()
-
-## Features
-
-A boilerplate with everything you'll need.
-
-- **Babel** — ES6 syntax, Airbnb & React/Recommended config
-- **CSS** — Styled Components
-- **Husky** — Prevent bad commits
-- **Lint** — ESlint
-- **React** — 16.7.0-alpha.0 with Hooks
-- **Redux** — State Management
-- **Tests** — Jest, React Testing Library & Cypress
-- **Webpack** — Hot Reloading, Code Splitting, Optimized Build
-
----
+See full MERN stack boilerplate at [reactable](https://github.com/Xillioneur/reactable)
 
 ## Quick Start
 
 ```sh
-  git clone https://github.com/Xillioneur/reactable.git
-  cd reactable
+  git clone https://github.com/Xillioneur/reactable-frontend.git
+  cd reactable-frontend
   npm install
   npm start
 ```
 
 ## Usage
 
-> Start the dev server
+> Start the dev app
 
 ```shell
 npm start
@@ -94,7 +69,7 @@ npm run cypress:open
 
 ### 1. Fork
 
-- **Fork and clone this repo using `https://github.com/Xillioneur/reactable.git`**
+- **Fork and clone this repo using `https://github.com/Xillioneur/reactable-frontend.git`**
 
 ### 2. Code
 
@@ -102,7 +77,7 @@ npm run cypress:open
 
 ### 3. Submit pull request
 
-- **Create a new pull request using `https://github.com/Xillioneur/reactable/compare`.**
+- **Create a new pull request using `https://github.com/Xillioneur/reactable-frontend/compare`.**
 
 ---
 
@@ -120,4 +95,4 @@ Reach out to me at one of the following places!
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2019 © <a href="#" target="_blank">reactable</a>.
+- Copyright 2019 © <a href="#" target="_blank">reactable-frontend</a>.
