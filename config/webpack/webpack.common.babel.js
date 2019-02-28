@@ -7,12 +7,15 @@ import rules from './rules';
 
 // call dotenv and it will return an Object with a parsed key
 const env = dotenv.config().parsed;
+let envKeys = {};
 
-// reduce it to a nice object, the same as before
-const envKeys = Object.keys(env).reduce((prev, next) => {
-  prev[`process.env.${next}`] = JSON.stringify(env[next]);
-  return prev;
-}, {});
+if (env) {
+  // reduce it to a nice object, the same as before
+  envKeys = Object.keys(env).reduce((prev, next) => {
+    prev[`process.env.${next}`] = JSON.stringify(env[next]);
+    return prev;
+  }, {});
+}
 
 module.exports = {
   entry: paths.entryPath,
