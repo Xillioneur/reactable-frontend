@@ -39,7 +39,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null,
+      status: null,
     };
   }
 
@@ -50,13 +50,13 @@ class App extends Component {
 
   // Retrieves the list of items from the Express app
   getData = () => {
-    fetch(process.env.API_URL)
+    fetch(`${process.env.API_URL}/status`)
       .then(res => res.json())
-      .then(json => this.setState({ data: json.data }));
+      .then(json => this.setState({ status: json.status }));
   };
 
   render() {
-    const { data } = this.state;
+    const { status } = this.state;
 
     return (
       <Container>
@@ -72,7 +72,7 @@ class App extends Component {
               here.
             </Link>
           </Paragraph>
-          {data}
+          {status}
         </Wrapper>
       </Container>
     );
