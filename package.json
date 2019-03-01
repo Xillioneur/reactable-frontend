@@ -4,7 +4,7 @@
   "description": "Quick & simple boilerplate for your React projects.",
   "main": "client/src/index.js",
   "scripts": {
-    "start": "serve -s client/build",
+    "start": "npm run build && serve -s client/build",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --watch --hot",
     "build": "cross-env NODE_ENV=production webpack",
     "lint": "eslint ./client/src/**/**.js",
