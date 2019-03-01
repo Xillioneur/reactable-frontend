@@ -35,6 +35,8 @@ const Link = styled.a`
   color: #00a8e8;
 `;
 
+const apiUrl = process.env.API_URL || 'http://localhost:3000';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -50,7 +52,7 @@ class App extends Component {
 
   // Retrieves the list of items from the Express app
   getData = () => {
-    fetch(`${process.env.API_URL}/status`)
+    fetch(`${apiUrl}/status`)
       .then(res => res.json())
       .then(json => this.setState({ status: json.status }));
   };
@@ -73,7 +75,7 @@ class App extends Component {
             </Link>
           </Paragraph>
 
-          <Link href={process.env.API_URL} target="_blank">
+          <Link href={apiUrl} target="_blank">
             {status}
           </Link>
         </Wrapper>
