@@ -3,6 +3,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 import paths from './paths';
 import rules from './rules';
+import envs from './envs';
 
 module.exports = {
   entry: paths.entryPath,
@@ -27,5 +28,6 @@ module.exports = {
         removeAttributeQuotes: true,
       },
     }),
+    new webpack.DefinePlugin(envs),
   ],
 };

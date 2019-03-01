@@ -6,7 +6,7 @@
   "scripts": {
     "start": "serve -s client/build",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --watch --hot",
-    "build": "cross-env NODE_ENV=production webpack",
+    "build": "cross-env NODE_ENV=production API_URL=https://rocky-bayou-60677.herokuapp.com/ webpack ",
     "lint": "eslint ./client/src/**/**.js",
     "lint:fix": "eslint ./client/src/**/**.js --fix",
     "test": "jest",

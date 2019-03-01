@@ -3,7 +3,6 @@ import Jarvis from 'webpack-jarvis';
 
 import paths from './paths';
 import rules from './rules';
-import envs from './envs';
 
 module.exports = {
   mode: 'development',
@@ -36,6 +35,5 @@ module.exports = {
     new Jarvis({
       port: 1337,
     }),
-    new webpack.DefinePlugin(envs),
   ],
 };
