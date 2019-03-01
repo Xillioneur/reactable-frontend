@@ -57,7 +57,7 @@ class App extends Component {
 
   render() {
     const { status } = this.state;
-
+    console.log(status);
     return (
       <Container>
         <Wrapper>
@@ -72,7 +72,10 @@ class App extends Component {
               here.
             </Link>
           </Paragraph>
-          {status}
+
+          <Link href={process.env.API_URL} target="_blank">
+            {status}
+          </Link>
         </Wrapper>
       </Container>
     );

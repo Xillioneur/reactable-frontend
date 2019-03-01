@@ -12,7 +12,7 @@
     "test:watch": "yarn run test --watch",
     "test:cover": "yarn run test --coverage",
     "cypress:open": "cypress open",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm install --only=dev && npm install && npm run build"
   },
   "keywords": [
     "react",
