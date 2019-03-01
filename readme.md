@@ -13,10 +13,16 @@ See full MERN stack boilerplate at [reactable](https://github.com/Xillioneur/rea
 
 ## Usage
 
-> Start the dev app
+> Serve the app's build
 
 ```shell
 npm start
+```
+
+> Start dev server
+
+```shell
+npm run dev
 ```
 
 > Create a production ready build in dist folder
