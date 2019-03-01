@@ -1,7 +1,9 @@
 import CleanWebpackPlugin from 'clean-webpack-plugin';
+import webpack from 'webpack';
 
 import paths from './paths';
 import rules from './rules';
+import envs from './envs';
 
 module.exports = {
   mode: 'production',
@@ -14,6 +16,7 @@ module.exports = {
     new CleanWebpackPlugin([paths.outputPath.split('/').pop()], {
       root: paths.root,
     }),
+    new webpack.DefinePlugin(envs),
   ],
   devtool: 'source-map',
 };
